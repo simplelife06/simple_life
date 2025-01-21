@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4e8e1; /* Jasmine Flower */
+    color: #3d2b1f; /* Bistre */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#quote-box {
+    background-color: #d4cc9a; /* Dusty Yellow */
+    border: 2px solid #836539; /* Dirt Brown */
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#new-quote, #purchase-button {
+    background-color: #81b14f; /* Moss Green */
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#new-quote:hover, #purchase-button:hover {
+    background-color: #6e9377; /* Watercress */
+}
+
+#purchase-button {
+    display: inline-block;
+    text-align: center;
+}
