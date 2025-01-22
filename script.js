@@ -1,11 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const quotes = [
-        "The only way to do great work is to love what you do. – Steve Jobs",
-        "Life is what happens when you're busy making other plans. – John Lennon",
-        "The purpose of our lives is to be happy. – Dalai Lama",
-        "Get busy living or get busy dying. – Stephen King",
-        "You have within you right now, everything you need to deal with whatever the world can throw at you. – Brian Tracy",
-        "Life is about making an impact, not making an income. – Kevin Kruse",
+const quotes = [
+    "Life is about making an impact, not making an income. – Kevin Kruse",
     "Whatever the mind of man can conceive and believe, it can achieve. – Napoleon Hill",
     "Strive not to be a success, but rather to be of value. – Albert Einstein",
     "I attribute my success to this: I never gave or took any excuse. – Florence Nightingale",
@@ -53,45 +47,13 @@ document.addEventListener('DOMContentLoaded', () => {
     "When I let go of what I am, I become what I might be. – Lao Tzu",
     "Life is not measured by the number of breaths we take, but by the moments that take our breath away. – Maya Angelou",
     "Happiness is not something readymade. It comes from your own actions. – Dalai Lama",
-    "If you're offered a seat on a rocket ship, don't ask what seat! Just get on. – Sheryl Sandberg",
-    "First, have a definite, clear practical ideal; a goal, an objective. Second, have the necessary means to achieve your ends; wisdom, money, materials, and methods. Third, adjust all your means to that end. – Aristotle",
-    "If the wind will not serve, take to the oars. – Latin Proverb",
-    "You can't fall if you don't climb. But there's no joy in living your whole life on the ground. – Unknown",
-    "We must believe that we are gifted for something, and that this thing, at whatever cost, must be attained. – Marie Curie",
-    "Too many of us are not living our dreams because we are living our fears. – Les Brown",
-    "Challenges are what make life interesting and overcoming them is what makes life meaningful. – Joshua J. Marine",
-    "If you want to lift yourself up, lift up someone else. – Booker T. Washington",
-    "I have been impressed with the urgency of doing. Knowing is not enough; we must apply. Being willing is not enough; we must do. – Leonardo da Vinci",
-    "Limitations live only in our minds. But if we use our imaginations, our possibilities become limitless. – Jamie Paolinetti",
-    "Be yourself; everyone else is already taken. – Oscar Wilde",
-    "To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment. – Ralph Waldo Emerson",
-    "Do not go where the path may lead, go instead where there is no path and leave a trail. – Ralph Waldo Emerson",
-    "In three words I can sum up everything I've learned about life: it goes on. – Robert Frost",
-    "The only impossible journey is the one you never begin. – Tony Robbins",
-    "It does not matter how slowly you go as long as you do not stop. – Confucius",
-    "You don't have to be great to start, but you have to start to be great. – Zig Ziglar",
-    "The journey of a thousand miles begins with one step. – Lao Tzu",
-    "Success is not final, failure is not fatal: It is the courage to continue that counts. – Winston Churchill",
-    "Hardships often prepare ordinary people for an extraordinary destiny. – C.S. Lewis",
-    "The only way to do great work is to love what you do. – Steve Jobs",
-    "Life is what happens when you're busy making other plans. – John Lennon",
-    "The purpose of our lives is to be happy. – Dalai Lama",
-    "Get busy living or get busy dying. – Stephen King",
-    "You have within you right now, everything you need to deal with whatever the world can throw at you. – Brian Tracy"
+    "If you're offered a seat on a rocket ship, don't ask what seat! Just get on. – Sheryl Sandberg"
+];
 
-        
-    ];
+const quoteBtn = document.getElementById('quoteBtn');
+const quoteDisplay = document.getElementById('quoteDisplay');
 
-    const quoteElement = document.getElementById('quote');
-    const newQuoteButton = document.getElementById('new-quote');
-
-    function displayRandomQuote() {
-        const randomIndex = Math.floor(Math.random() * quotes.length);
-        quoteElement.textContent = quotes[randomIndex];
-    }
-
-    newQuoteButton.addEventListener('click', displayRandomQuote);
-
-    // Display a random quote on initial load
-    displayRandomQuote();
+quoteBtn.addEventListener('click', () => {
+    const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+    quoteDisplay.textContent = randomQuote;
 });

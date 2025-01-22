@@ -1,53 +1,66 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4e8e1; /* Jasmine Flower */
-    color: #3d2b1f; /* Bistre */
+    background-color: #185a20; /* Soft background color */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    color: #333; /* Dark gray text for contrast */
+}
+
+.container {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    margin: 0;
-}
-
-header {
-    margin-bottom: 20px;
-}
-
-#logo {
-    width: 150px;
-    height: auto;
-}
-
-#quote-box {
-    background-color: #d4cc9a; /* Dusty Yellow */
-    border: 2px solid #836539; /* Dirt Brown */
+    align-items: center;
+    background-color: #185a20; /* White background for content */
+    padding: 30px;
     border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    width: 80%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
     max-width: 600px;
-    margin-bottom: 20px;
 }
 
-#new-quote, #purchase-button {
-    background-color: #81b14f; /* Moss Green */
-    color: #0c450e;
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #4e4e4e; /* Subtle color for the header */
+}
+
+.quote {
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #6e6e6e; /* Slightly lighter gray */
+}
+
+button {
+    background-color: #4CAF50; /* Earthy green button */
+    color: rgb(255, 255, 255);
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    text-decoration: none;
+    padding: 15px 32px;
     font-size: 16px;
-    margin: 5px;
     cursor: pointer;
+    border-radius: 5px;
+    margin: 10px 0;
     transition: background-color 0.3s;
 }
 
-#new-quote:hover, #purchase-button:hover {
-    background-color: #6e9377; /* Watercress */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
 }
 
-#purchase-button {
-    display: inline-block;
-    text-align: center;
+button:focus {
+    outline: none; /* Removes outline when focused */
+}
+
+#quoteBtn {
+    width: 200px;
+}
+
+#buyBtn {
+    width: 250px;
 }

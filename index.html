@@ -3,20 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Quote Generator</title>
+    <title>Quote Generator</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <img src="simplelife.png" alt="Logo" id="logo">
-    </header>
-    <main>
-        <div id="quote-box">
-            <p id="quote"></p>
+    <div class="container">
+        <h1>Welcome to Your Quote Generator!</h1>
+        <div class="quote" id="quoteDisplay">
+            "Life is about making an impact, not making an income." — Kevin Kruse
         </div>
-        <button id="new-quote">New Quote</button>
-        <a href="https://www.tiktok.com/@..evooo?is_from_webapp=1&sender_device=pc" id="purchase-button">Buy the Hoodie</a>
-    </main>
+        <button id="quoteBtn">New Quote</button>
+        <button id="buyBtn" onclick="window.location.href='https://your-hoodie-purchase-link.com'">Purchase Hoodie</button>
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
