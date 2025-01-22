@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #185a20; /* Soft background color */
+    background-color: #889E73; /* Soft background color */
     margin: 0;
     padding: 0;
     display: flex;
@@ -9,37 +9,37 @@ body {
     height: 100vh;
     text-align: center;
     color: #333; /* Dark gray text for contrast */
-}
-
-.container {
+  }
+  
+  .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #185a20; /* White background for content */
+    background-color: #FFF6DA; /* White background for content */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 90%;
     max-width: 600px;
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 24px;
     margin-bottom: 20px;
-    color: #4e4e4e; /* Subtle color for the header */
-}
-
-.quote {
+    color: #A94A4A; /* Subtle color for the header */
+  }
+  
+  .quote {
     font-size: 18px;
     margin-bottom: 20px;
     font-style: italic;
     color: #6e6e6e; /* Slightly lighter gray */
-}
-
-button {
-    background-color: #4CAF50; /* Earthy green button */
-    color: rgb(255, 255, 255);
+  }
+  
+  button {
+    background-color: #F4D793; /* Earthy green button */
+    color: white;
     border: none;
     padding: 15px 32px;
     font-size: 16px;
@@ -47,20 +47,21 @@ button {
     border-radius: 5px;
     margin: 10px 0;
     transition: background-color 0.3s;
-}
-
-button:hover {
-    background-color: #45a049; /* Darker green on hover */
-}
-
-button:focus {
+  }
+  
+  button:hover {
+    background-color: #889E73; /* Darker green on hover */
+  }
+  
+  button:focus {
     outline: none; /* Removes outline when focused */
-}
-
-#quoteBtn {
+  }
+  
+  #quoteBtn {
     width: 200px;
-}
-
-#buyBtn {
+  }
+  
+  #buyBtn {
     width: 250px;
-}
+  }
+  

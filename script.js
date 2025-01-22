@@ -48,12 +48,13 @@ const quotes = [
     "Life is not measured by the number of breaths we take, but by the moments that take our breath away. – Maya Angelou",
     "Happiness is not something readymade. It comes from your own actions. – Dalai Lama",
     "If you're offered a seat on a rocket ship, don't ask what seat! Just get on. – Sheryl Sandberg"
-];
-
-const quoteBtn = document.getElementById('quoteBtn');
-const quoteDisplay = document.getElementById('quoteDisplay');
-
-quoteBtn.addEventListener('click', () => {
+  ];
+  
+  const quoteBtn = document.getElementById('quoteBtn');
+  const quoteDisplay = document.getElementById('quoteDisplay');
+  
+  quoteBtn.addEventListener('click', () => {
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     quoteDisplay.textContent = randomQuote;
-});
+  });
+  
